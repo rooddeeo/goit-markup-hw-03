@@ -1,0 +1,313 @@
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+/* -- GLOBAL STYLE -- */
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--text);
+  background-color: var(--white-background);
+}
+
+.link {
+  text-decoration: none;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: 800;
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--primary-drand);
+}
+
+:root {
+  --primary-drand: #4d5ae5;
+  --text: #434455;
+  --white-background: #ffffff;
+  --hero-background: #2e2f42;
+  --pressed-state: #404bbf;
+  --light: #f4f4fd;
+}
+
+/* -- INDEX STYLE PAGE -- */
+/* -- HEADER -- */
+
+.container {
+  display: block;
+  width: 1158px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+  outline: 2px solid red;
+}
+
+.header-container {
+  display: flex;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-navigation {
+  display: flex;
+  flex-grow: 1;
+}
+
+.header-logo {
+  margin-right: 76px;
+}
+
+.logo-color {
+  color: var(--hero-background);
+}
+
+.header-menu {
+  display: flex;
+}
+
+.header-menu-item:not(:last-child),
+.header-contacts-list-item:not(:last-child) {
+margin-right: 40px;
+}
+
+.header-menu-link {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+}
+
+.header-menu-link:hover,
+.header-menu-link:focus {
+  color: var(--pressed-state);
+}
+
+.header-contacts {
+  font-style: normal;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+.header-contacts-list {
+  display: flex;
+}
+
+.header-contacts-link {
+  color: var(--text);
+}
+
+.header-contacts-link:hover,
+.header-contacts-link:focus {
+  color: var(--pressed-state);
+}
+
+/* -- MAIN -- */
+/* -- SECTION HERO`S -- */
+.heros {
+  background-color: var(--hero-background);
+  padding-top: 188px;
+  padding-bottom: 188px;
+}
+
+.heros-title {
+  max-width: 496px;
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: 0.02em;
+  color: var(--white-background);
+  text-align: center;
+  padding-bottom: 48px;
+  margin: 0 auto;
+}
+
+.heros-button {
+  display: block;
+  margin: 0 auto;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--white-background);
+  background-color: var(--primary-drand);
+  cursor: pointer;
+}
+
+.heros-button:hover,
+.heros-button:focus {
+  background-color: var(--pressed-state);
+  color: var(--pressed-state);
+}
+
+/* -- SECTION DIGNYTY -- */
+
+.dignity-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 120px;
+  padding-bottom: 120px;
+  
+}
+
+.dignity-list-item {
+  width: calc(100% - (24px * 3) / 4);
+}
+
+.dignity-sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+  margin-bottom: 8px;
+}
+
+.dignity-item-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
+
+/* -- SECTION DOING -- */
+
+.doing {
+  padding-bottom: 120px;
+}
+
+.doing-title {
+  margin: 0 auto;
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--hero-background);
+  text-align: center;
+}
+
+.doing-list {
+  display: flex;
+  gap: 24px;
+  padding-top: 72px;
+}
+
+.doing-list-item {
+  width: calc(100% - (24px * 2) / 3);
+  outline: 1px solid black;
+}
+
+/* -- SECTION TEAM -- */
+
+.team {
+  background-color: var(--light);
+}
+
+.team-title {
+  font-size: 36px;
+  padding-top: 120px;
+  padding-bottom: 72px;
+  line-height: 1.11;
+  letter-spacing: 0.02em;
+  text-transform: capitalize;
+  color: var(--hero-background);
+  text-align: center;
+}
+
+.team-sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+  text-align: center;
+}
+
+.team-list-item {
+  background-color: var(--white-background);
+}
+
+.team-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+  text-align: center;
+}
+
+/* -- FOOTER -- */
+.footer {
+  background-color: var(--hero-background);
+}
+
+.footer-logo-color {
+  color: var(--light);
+}
+
+.footer-paragraph {
+  color: var(--light);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+}
+/* -- PORTFOLIO STYLE PAGE -- */
+/* -- MAIN -- */
+/* -- SECTION FILTER&RESULT -- */
+.filter-button {
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: var(--primary-drand);
+  background-color: var(--light);
+  cursor: pointer;
+}
+
+.filter-button:hover,
+.filter-button:focus {
+  color: var(--white-background);
+  background-color: var(--pressed-state);
+}
+
+.result-sub-title {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: 0.02em;
+  color: var(--hero-background);
+}
+
+.result-paragraph {
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: var(--text);
+}
