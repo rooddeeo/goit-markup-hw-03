@@ -24,6 +24,19 @@ img {
   display: block;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 /* -- GLOBAL STYLE -- */
 
 body {
@@ -96,7 +109,7 @@ body {
 
 .header-menu-item:not(:last-child),
 .header-contacts-list-item:not(:last-child) {
-margin-right: 40px;
+  margin-right: 40px;
 }
 
 .header-menu-link {
@@ -135,6 +148,7 @@ margin-right: 40px;
 
 /* -- MAIN -- */
 /* -- SECTION HERO`S -- */
+
 .heros {
   background-color: var(--hero-background);
   padding-top: 188px;
@@ -155,6 +169,7 @@ margin-right: 40px;
 .heros-button {
   display: block;
   margin: 0 auto;
+  padding: 16px 32px;
   font-family: inherit;
   font-size: 16px;
   font-weight: 500;
@@ -163,6 +178,8 @@ margin-right: 40px;
   color: var(--white-background);
   background-color: var(--primary-drand);
   cursor: pointer;
+  border: none;
+  border-radius: 4px;
 }
 
 .heros-button:hover,
@@ -178,7 +195,6 @@ margin-right: 40px;
   gap: 24px;
   padding-top: 120px;
   padding-bottom: 120px;
-  
 }
 
 .dignity-list-item {
@@ -224,7 +240,6 @@ margin-right: 40px;
 
 .doing-list-item {
   width: calc(100% - (24px * 2) / 3);
-  outline: 1px solid black;
 }
 
 /* -- SECTION TEAM -- */
@@ -242,6 +257,21 @@ margin-right: 40px;
   text-transform: capitalize;
   color: var(--hero-background);
   text-align: center;
+}
+
+.team-list {
+  display: flex;
+  gap: 24px;
+  padding-bottom: 120px;
+}
+
+.team-list-item {
+  width: calc(100% - (24px * 3) / 4);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-description {
+  padding: 32px 16px;
 }
 
 .team-sub-title {
@@ -265,8 +295,10 @@ margin-right: 40px;
 }
 
 /* -- FOOTER -- */
+
 .footer {
   background-color: var(--hero-background);
+  padding: 100px 0px;
 }
 
 .footer-logo-color {
@@ -274,13 +306,42 @@ margin-right: 40px;
 }
 
 .footer-paragraph {
+  max-width: 264px;
+  margin-top: 16px;
   color: var(--light);
   line-height: 1.5;
   letter-spacing: 0.02em;
 }
+
 /* -- PORTFOLIO STYLE PAGE -- */
 /* -- MAIN -- */
 /* -- SECTION FILTER&RESULT -- */
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+  gap: 24px;
+  padding-top: 96px;
+  margin-bottom: 72px;
+}
+
+.filter-button {
+  padding: 12px 24px;
+  border: 1px solid #e7e9fc;
+  border-radius: 4px;
+}
+
+.result-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 48px 24px;
+}
+
+.result-list-item {
+  width: calc(100% - (24px * 2) / 3);
+}
+
 .filter-button {
   font-family: inherit;
   font-size: 16px;
