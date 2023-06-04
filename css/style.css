@@ -103,7 +103,7 @@ body {
 }
 
 .header-logo {
-  padding: 10px 10px;
+  padding: 0 10px;
   margin-right: 76px;
 }
 
@@ -127,7 +127,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 10px 10px;
+  padding: 0 10px;
   color: var(--hero-background);
 }
 
