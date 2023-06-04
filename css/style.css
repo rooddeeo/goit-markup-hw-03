@@ -95,6 +95,7 @@ body {
 
 .header-container {
   display: flex;
+  align-items: center;
 }
 
 .header-navigation {
@@ -116,7 +117,7 @@ body {
   align-items: center;
 }
 
-.he .header-menu-item:not(:last-child),
+.header-menu-item:not(:last-child),
 .header-contacts-list-item:not(:last-child) {
   margin-right: 40px;
 }
@@ -145,7 +146,6 @@ body {
 
 .header-contacts-list {
   display: flex;
-  align-items: center;
 }
 
 .header-contacts-link {
@@ -174,8 +174,9 @@ body {
   letter-spacing: 0.02em;
   color: var(--white-background);
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 48px;
-  margin: 0 auto;
 }
 
 .heros-button {
@@ -316,10 +317,6 @@ body {
   padding: 100px 0px;
 }
 
-.footer-logo {
-  margin-bottom: 16px; /* НЕ РАБОТАЕТ!!! -- */
-}
-
 .footer-logo-color {
   color: var(--light);
 }
@@ -329,6 +326,7 @@ body {
   color: var(--light);
   line-height: 1.5;
   letter-spacing: 0.02em;
+  margin-top: 16px;
 }
 
 /* -- PORTFOLIO STYLE PAGE -- */
