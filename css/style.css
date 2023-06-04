@@ -99,11 +99,12 @@ body {
 
 .header-navigation {
   display: flex;
+  align-items: center;
   flex-grow: 1;
 }
 
 .header-logo {
-  padding: 0 10px;
+  padding: 24px 0;
   margin-right: 76px;
 }
 
@@ -113,7 +114,6 @@ body {
 
 .header-menu {
   display: flex;
-  align-items: center;
 }
 
 .header-menu-item:not(:last-child),
@@ -127,7 +127,7 @@ body {
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding: 0 10px;
+  padding: 24px 0;
   color: var(--hero-background);
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 .header-contacts-link {
-  padding: 10px 10px;
+  padding: 24px 0;
   color: var(--text);
 }
 
@@ -179,6 +179,7 @@ body {
 }
 
 .heros-button {
+  min-width: 169px;
   display: block;
   margin: 0 auto;
   padding: 16px 32px;
@@ -316,6 +317,11 @@ body {
   padding: 100px 0px;
 }
 
+.footer-logo {
+  display: inline-block;
+  margin-bottom: 16px;
+}
+
 .footer-logo-color {
   color: var(--light);
 }
@@ -325,7 +331,6 @@ body {
   color: var(--light);
   line-height: 1.5;
   letter-spacing: 0.02em;
-  margin-top: 16px;
 }
 
 /* -- PORTFOLIO STYLE PAGE -- */
@@ -361,8 +366,9 @@ body {
 }
 
 .description-cards {
-  padding: 32px 16px 64px 16px;
+  padding: 32px 16px;
   border: 1px solid #e7e9fc;
+  border-top: none;
 }
 
 .result-sub-title {
@@ -382,6 +388,7 @@ body {
 
 .filter-button:hover,
 .filter-button:focus {
+  border: 1px solid transparent;
   color: var(--white-background);
   background-color: var(--pressed-state);
 }
